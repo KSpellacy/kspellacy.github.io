@@ -15,7 +15,7 @@ html = """<!doctype html>
     .wrap { max-width: var(--max); margin: 0 auto; padding: 56px var(--pad) 72px; }
     header { display: grid; grid-template-columns: 140px 1fr; gap: 24px; align-items: center; }
     @media (max-width: 680px){ header { grid-template-columns: 1fr; text-align: center; } .headshot { margin: 0 auto; } }
-    h1 { margin: 0; font-size: 44px; }
+    h1 { margin: 0; font-size: 44px; letter-spacing: .2px; }
     .tagline { margin-top: 6px; font-size: 16px; color: var(--muted); }
     .summary { margin-top: 14px; max-width: 72ch; }
     .headshot { width: 140px; height: 140px; border-radius: 999px; object-fit: cover; border: 1px solid var(--border); }
@@ -38,6 +38,7 @@ html = """<!doctype html>
     .kpi { display:flex; gap:10px; flex-wrap: wrap; margin-top: 10px; }
     .pill { display:inline-block; padding:6px 10px; border-radius: 999px; border:1px solid var(--border); background:#fff; font-size: 13px; color: var(--muted); }
     .hr { height:1px; background: var(--border); margin: 16px 0; }
+    a { color: inherit; }
   </style>
 </head>
 <body>
@@ -46,21 +47,21 @@ html = """<!doctype html>
   <img class="headshot" src="keaton-headshot.png" alt="Keaton Spellacy headshot">
   <div>
     <h1>Keaton Spellacy</h1>
-    <div class="tagline">Aviation | Technology | Leadership</div>
+    <div class="tagline">Aviation | UAS | Technology | Leadership</div>
     <p class="summary">
-      Aviation-focused student with hands-on experience in manned flight training and unmanned aircraft systems.
-      I’m a Private Pilot and FAA Part 107 Remote Pilot who enjoys building real-world skills through competitive teams
-      and community STEM outreach.
+      Aviation-focused student building real-world skills across flight training, unmanned aircraft systems, and applied technology.
+      I’m a Private Pilot and FAA Part 107 Remote Pilot, and I founded STARS (Service-oriented Technology, Aviation, and Robotics for Scholars)
+      to deliver hands-on aviation and STEM learning in the community.
     </p>
     <div class="kpi">
-      <span class="pill">Private Pilot Certificate (PPL)</span>
-      <span class="pill">FAA Part 107 Remote Pilot</span>
+      <span class="pill">Private Pilot (PPL)</span>
+      <span class="pill">FAA Part 107</span>
       <span class="pill">STARS Founder</span>
-      <span class="pill">Governor’s Workforce Summit Speaker</span>
+      <span class="pill">GA Governor’s Workforce Summit Speaker</span>
     </div>
     <div class="btnrow">
       <a class="btn" href="https://www.linkedin.com/in/keaton-spellacy" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-      <a class="btn" href="mailto:kcspellacy@gmail.com">Email</a>
+      <a class="btn" href="mailto:kcspellacy@gmail.com">kcspellacy@gmail.com</a>
     </div>
   </div>
 </header>
@@ -68,14 +69,9 @@ html = """<!doctype html>
 <section>
 <h2>About</h2>
 <p>
-I’m interested in how aviation operations, safety culture, and emerging technology come together in the real world.
-My work spans flight training, UAS operations, and applied technical problem-solving. In parallel, I founded and lead
-STARS (Service-oriented Technology, Aviation, and Robotics for Scholars), a student-led STEM outreach initiative that
-brings aviation, drones, robotics, and cybersecurity experiences to K–12 students through hands-on events and curriculum.
-</p>
-<p class="small">
-I’m most energized by environments where precision matters, teams execute with discipline, and technical skill connects
-to real outcomes — whether that’s in the cockpit, on a flight line, or in systems that support safe aviation at scale.
+I’m interested in aviation operations, safety culture, and how emerging technology supports better outcomes in the air and on the ground.
+My experience includes manned flight training, UAS operations, competitive autonomous systems, and cybersecurity fundamentals.
+I’m especially motivated by environments where precision matters, teams execute with discipline, and learning is tied to real responsibility.
 </p>
 </section>
 
@@ -84,110 +80,92 @@ to real outcomes — whether that’s in the cockpit, on a flight line, or in sy
 <div class="grid3">
   <div class="card">
     <strong>Aviation & Flight</strong><br>
-    Safety-first execution, disciplined preparation, and operational decision-making across manned and unmanned environments.
+    Training-focused discipline and safety-first decision-making in both manned and unmanned environments.
     <ul>
-      <li>Flight training (PPL)</li>
+      <li>Private Pilot (PPL)</li>
       <li>Risk management mindset</li>
       <li>Standardization and professionalism</li>
     </ul>
   </div>
   <div class="card">
-    <strong>UAS, Autonomy & Technology</strong><br>
-    FAA Part 107 operations, competitive drone systems, and technical fundamentals applied through projects and teams.
+    <strong>UAS, Autonomy & Cyber</strong><br>
+    UAS operations and technical fundamentals applied through projects, competitions, and coursework.
     <ul>
-      <li>UAS mission planning and compliance</li>
-      <li>Autonomous flight concepts</li>
-      <li>Cybersecurity fundamentals</li>
+      <li>FAA Part 107 operations and compliance</li>
+      <li>Autonomous/mission-based flight concepts</li>
+      <li>Cybersecurity fundamentals and team-based problem solving</li>
     </ul>
   </div>
   <div class="card">
-    <strong>Leadership & Public Impact</strong><br>
-    Founder-led program development with STARS, event execution, and team leadership focused on measurable outcomes.
+    <strong>Leadership & STEM Impact</strong><br>
+    Building teams and programs that execute well, communicate clearly, and deliver value to others.
     <ul>
-      <li>Curriculum + facilitation</li>
-      <li>Volunteer and logistics coordination</li>
-      <li>Communicating with stakeholders</li>
+      <li>Founder-led outreach (STARS)</li>
+      <li>Event execution and logistics</li>
+      <li>Instruction, mentoring, and public speaking</li>
     </ul>
   </div>
 </div>
 </section>
 
 <section>
-<h2>Credentials</h2>
+<h2>Highlights</h2>
 <div class="grid2">
   <div class="card">
-    <h3>Certifications</h3>
+    <h3>Top Credentials</h3>
     <ul>
-      <li>Private Pilot Certificate (PPL)</li>
+      <li>FAA Part 141 Certified Private Pilot</li>
       <li>FAA Part 107 Remote Pilot Certificate</li>
+      <li>US Air Force JROTC Flight Academy Scholarship Recipient (Purdue University)</li>
     </ul>
     <div class="hr"></div>
-    <div class="small">
-      I focus on responsible operations, checklist discipline, and continuous improvement — not just “having the credential.”
-    </div>
+    <p class="small">
+      I focus on preparation, safety, and repeatable execution — not just collecting credentials.
+    </p>
   </div>
   <div class="card">
-    <h3>Core Skills</h3>
+    <h3>Selective Recognition</h3>
     <ul>
-      <li>Safety and risk management mindset</li>
-      <li>Technical documentation and communication</li>
-      <li>Team leadership under time constraints</li>
-      <li>Applied cybersecurity basics</li>
-      <li>Project execution and iteration</li>
+      <li>CCSD &amp; GA CTAE Talent Spotlight Speaker — Georgia Governor’s Workforce Summit</li>
+      <li>CyberPatriot XV National Finals — Placed 8th</li>
+      <li>National JROTC All-Service Aerial Drone Championship — Placed 2nd</li>
     </ul>
   </div>
 </div>
 </section>
 
 <section>
-<h2>Leadership & Public Recognition</h2>
-<ul>
-  <li><strong>Talent Spotlight Speaker</strong> — Georgia Governor’s Workforce Summit</li>
-  <li><strong>Founder & Program Lead</strong> — STARS STEM Outreach (aviation, drones, robotics, cybersecurity)</li>
-</ul>
-<div class="gallery">
-  <img class="photo" src="workforce-summit-1.jpg" alt="Georgia Governor’s Workforce Summit">
-  <img class="photo" src="workforce-summit-2.jpg" alt="Georgia Governor’s Workforce Summit">
-</div>
-</section>
-
-<section>
-<h2>STARS — Program Overview</h2>
+<h2>STARS — Community STEM Outreach</h2>
 <div class="grid2">
   <div class="card">
-    <h3>Mission</h3>
+    <h3>What STARS is</h3>
     <p class="small">
-      STARS (Service-oriented Technology, Aviation, and Robotics for Scholars) is a student-led outreach initiative that
-      brings hands-on STEM learning to K–12 students. The goal is simple: make aviation and technology approachable,
-      practical, and exciting — while keeping quality and safety high.
+      STARS (Service-oriented Technology, Aviation, and Robotics for Scholars) is a student-led outreach program I founded to make aviation and
+      technology approachable through hands-on learning. Sessions are built to be safe, engaging, and repeatable, with clear learning goals and
+      strong station flow.
     </p>
     <div class="hr"></div>
-    <p class="small">
-      If you’re a school or organization interested in hosting STARS, I’m happy to share a program outline and coordinate a session.
-    </p>
+    <h3>What a session looks like</h3>
+    <ul>
+      <li>Quick safety brief and expectations</li>
+      <li>Hands-on stations (drones, flight, robotics, cybersecurity)</li>
+      <li>Short debrief connecting concepts to real careers</li>
+      <li>Take-home pathways to keep learning</li>
+    </ul>
   </div>
   <div class="card">
-    <h3>What We Teach</h3>
+    <h3>Modules I’ve built and led</h3>
     <ul>
       <li>Drone fundamentals and safe operating practices</li>
-      <li>Flight concepts: lift, drag, control surfaces, and stability</li>
+      <li>Aerodynamics basics: lift, drag, stability, control</li>
       <li>Flight simulation and aviation workflow</li>
-      <li>Robotics basics and iterative building</li>
+      <li>Robotics fundamentals and iterative improvement</li>
       <li>Cybersecurity fundamentals (age-appropriate)</li>
     </ul>
-  </div>
-</div>
-
-<div class="card" style="margin-top:14px;">
-  <h3>Impact (Add Your Numbers)</h3>
-  <p class="small">
-    Replace the brackets with your latest metrics. Keeping these updated makes the site feel alive and credible.
-  </p>
-  <div class="kpi">
-    <span class="pill">[Students served: ___+]</span>
-    <span class="pill">[Schools/partners: ___]</span>
-    <span class="pill">[Events delivered: ___]</span>
-    <span class="pill">[Volunteer hours: ___]</span>
+    <div class="hr"></div>
+    <p class="small">
+      Interested in hosting STARS? Email me with your organization, preferred dates, student age range, and module interests.
+    </p>
   </div>
 </div>
 </section>
@@ -196,51 +174,86 @@ to real outcomes — whether that’s in the cockpit, on a flight line, or in sy
 <h2>Projects & Applied Work</h2>
 <div class="grid2">
   <div class="card">
-    <h3>UAS Operations + Competition Systems</h3>
+    <h3>UAS Operations + Competitive Systems</h3>
     <p class="small">
-      I build repeatable flight processes: preflight planning, controlled testing, post-flight review, and documentation.
-      Competitive drone work has strengthened my ability to iterate quickly while staying within constraints.
+      Competitive drone work taught me how to create repeatable processes: preflight planning, controlled testing, post-flight review, and clean documentation.
+      I’m comfortable working within constraints and improving performance through disciplined iteration.
     </p>
     <ul>
-      <li>Structured practice plans and debriefs</li>
+      <li>Mission planning and compliance mindset</li>
       <li>Autonomy concepts and repeatability</li>
-      <li>System thinking: hardware + software + human factors</li>
+      <li>Systems thinking: hardware + software + human factors</li>
     </ul>
   </div>
   <div class="card">
     <h3>Cybersecurity Fundamentals</h3>
     <p class="small">
-      I enjoy cybersecurity because it rewards disciplined thinking and accountability — the same traits that matter in aviation.
-      I’ve applied foundational concepts through coursework and team-based competition environments.
+      Cybersecurity rewards the same traits aviation demands: discipline, accountability, and clear thinking under pressure.
+      I’ve applied foundational concepts in competition and coursework environments focused on practical problem solving.
     </p>
     <ul>
-      <li>Security mindset and fundamentals</li>
-      <li>Team collaboration under time pressure</li>
-      <li>Documentation and clear communication</li>
+      <li>Security policy and basic forensics concepts</li>
+      <li>Network challenge environments and risk identification</li>
+      <li>Clear communication and documentation</li>
     </ul>
   </div>
 </div>
 
 <div class="card" style="margin-top:14px;">
-  <h3>How I Work</h3>
+  <h3>Technical Skills Snapshot</h3>
   <ul>
-    <li><strong>Plan:</strong> define the objective, constraints, and safety checks</li>
-    <li><strong>Execute:</strong> run structured tests and capture observations</li>
-    <li><strong>Improve:</strong> refine the process and document what changed</li>
+    <li>Python, Linux, and Windows environments</li>
+    <li>Object-oriented programming (Java)</li>
+    <li>Security fundamentals: policy, forensics concepts, and secure practices</li>
+    <li>Independent learning: generative AI and machine learning basics</li>
   </ul>
+</div>
+</section>
+
+<section>
+<h2>Education</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>Etowah High School</h3>
+    <p class="small">Aug 2024 – Present</p>
+    <ul>
+      <li>AP coursework in progress: Physics (Algebra-based), Computer Science A, Calculus AB, English Literature &amp; Composition</li>
+      <li>Completed: Chemistry, Pre-Calculus, Computer Science Principles, Language Arts</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Dual Enrollment</h3>
+    <ul>
+      <li>Chattahoochee Tech: Intro to Law &amp; Ethics; Information Security Fundamentals (and related coursework)</li>
+      <li>Purdue University: JROTC Ground School (Summer 2025)</li>
+      <li>Georgia Military College: Intro to American Government</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section>
+<h2>Affiliations</h2>
+<div class="grid3">
+  <div class="card"><strong>AOPA</strong><br>Aircraft Owners and Pilots Association</div>
+  <div class="card"><strong>EAA</strong><br>Experimental Aircraft Association</div>
+  <div class="card"><strong>Project Aviator</strong><br>Mentor/Mentee Program</div>
 </div>
 </section>
 
 <section>
 <h2>Selected Achievements</h2>
 <ul>
-  <li>Private Pilot Certificate (PPL)</li>
+  <li>CCSD &amp; GA CTAE Talent Spotlight Speaker — Georgia Governor’s Workforce Summit</li>
+  <li>FAA Part 141 Certified Private Pilot (PPL)</li>
   <li>FAA Part 107 Remote Pilot Certificate</li>
-  <li>8th Place — CyberPatriot Nationals</li>
-  <li>3rd Place — REC Aerial Drone Nationals</li>
+  <li>CyberPatriot XV National Finals — Placed 8th</li>
+  <li>National JROTC All-Service Aerial Drone Championship — Placed 2nd</li>
+  <li>Selected &amp; Attended UNG National Intelligence Summer Academy (NISA)</li>
+  <li>VEX Robotics Team earned an invitation to Nationals</li>
 </ul>
 <p class="small">
-I keep this list intentionally selective. If you want a full activity list or detailed portfolio, feel free to contact me.
+I keep this page curated for quick scanning. For a full resume, references, or a detailed portfolio, feel free to reach out.
 </p>
 </section>
 
@@ -250,17 +263,17 @@ I keep this list intentionally selective. If you want a full activity list or de
   <div class="card">
     <h3>Near-term</h3>
     <ul>
-      <li>Building deeper aviation experience through disciplined training and study</li>
-      <li>Expanding STARS program delivery with consistent quality and repeatable materials</li>
-      <li>Continuing technical growth in UAS systems and security fundamentals</li>
+      <li>Continuing disciplined aviation training and study</li>
+      <li>Expanding STARS delivery with consistent quality and strong safety practices</li>
+      <li>Deepening technical skill in UAS systems and cybersecurity fundamentals</li>
     </ul>
   </div>
   <div class="card">
     <h3>Long-term</h3>
     <ul>
-      <li>Professional flight pathway with a focus on safe, standardized operations</li>
+      <li>Professional flight with a focus on safe, standardized operations</li>
       <li>Aviation policy and general aviation advocacy</li>
-      <li>Technology-enabled systems that improve aviation safety and access</li>
+      <li>Technology-enabled systems that improve safety and access</li>
     </ul>
   </div>
 </div>
@@ -273,9 +286,10 @@ I keep this list intentionally selective. If you want a full activity list or de
     <h3>Best ways to reach me</h3>
     <ul>
       <li>Email: <a href="mailto:kcspellacy@gmail.com">kcspellacy@gmail.com</a></li>
+      <li>Phone: <a href="tel:+14706921851">(470) 692-1851</a></li>
       <li>LinkedIn: <a href="https://www.linkedin.com/in/keaton-spellacy" target="_blank" rel="noreferrer noopener">keaton-spellacy</a></li>
     </ul>
-    <p class="small">I’m open to internships, mentorship conversations, speaking opportunities, and STARS partnerships.</p>
+    <p class="small">Open to internships, mentorship conversations, speaking opportunities, and STARS partnerships.</p>
   </div>
   <div class="card">
     <h3>Quick note</h3>
