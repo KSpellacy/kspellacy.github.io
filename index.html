@@ -3,324 +3,103 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Keaton Spellacy</title>
-  <meta name="description" content="Keaton Spellacy - Aviation, Technology, Leadership." />
-  <style>
-    :root { --max: 980px; --pad: 24px; --text: #0f172a; --muted:#475569; --bg:#ffffff; --card:#f8fafc; --border:#e2e8f0; }
-    * { box-sizing: border-box; }
-
-    /* Step 1: modern, subtle background (non-distracting) */
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-           color: var(--text);
-           background:
-             radial-gradient(1200px 400px at 50% -100px, rgba(56, 189, 248, 0.08), transparent 60%),
-             linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-           line-height: 1.55; }
-
-    /* Step 3: gentle page canvas for readability */
-    .wrap { max-width: var(--max); margin: 0 auto; padding: 56px var(--pad) 72px;
-            background: rgba(255,255,255,0.75); backdrop-filter: blur(2px); }
-
-    header { display: grid; grid-template-columns: 140px 1fr; gap: 24px; align-items: center;
-             padding-bottom: 24px; border-bottom: 1px solid rgba(226,232,240,0.7); }
-    @media (max-width: 680px){ header { grid-template-columns: 1fr; text-align: center; } .headshot { margin: 0 auto; } }
-
-    h1 { margin: 0; font-size: 44px; letter-spacing: .2px; color: #020617; }
-    .tagline { margin-top: 6px; font-size: 16px; color: var(--muted); }
-    .summary { margin-top: 12px; max-width: 72ch; }
-
-    .headshot { width: 140px; height: 140px; border-radius: 999px; object-fit: cover; border: 1px solid var(--border); background:#fff; }
-
-    section { margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--border); }
-    h2 { margin: 0 0 12px; font-size: 20px; }
-    h3 { margin: 0 0 8px; font-size: 16px; }
-
-    .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-    @media (max-width: 900px){ .grid3 { grid-template-columns: 1fr; } }
-    .grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    @media (max-width: 900px){ .grid2 { grid-template-columns: 1fr; } }
-
-    /* Step 2: subtle card elevation */
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 8px 24px rgba(0,0,0,0.02); }
-
-    ul { margin: 10px 0 0; padding-left: 18px; }
-    .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 12px; }
-    @media (max-width: 680px){ .gallery { grid-template-columns: 1fr; } }
-    .photo { width: 100%; border-radius: 14px; border: 1px solid var(--border); }
-
-    footer { margin-top: 44px; color: var(--muted); font-size: 13px; }
-    .btnrow { display:flex; gap:10px; margin-top: 12px; flex-wrap: wrap; }
-    .btn { padding:10px 12px; border-radius: 12px; border:1px solid var(--border); text-decoration:none; color: var(--text); background: #fff; }
-    .small { color: var(--muted); font-size: 14px; }
-    .kpi { display:flex; gap:10px; flex-wrap: wrap; margin-top: 10px; }
-    .pill { display:inline-block; padding:6px 10px; border-radius: 999px; border:1px solid var(--border); background:#fff; font-size: 13px; color: var(--muted); }
-    .hr { height:1px; background: var(--border); margin: 16px 0; }
-    a { color: inherit; }
-  </style>
+  <title>Keaton Spellacy | Aviation, STEM & AI-Assisted Websites</title>
+  <meta name="description" content="Keaton Spellacy is a student pilot, FAA Part 107 Remote Pilot, STARS founder, and aviation/STEM leader building AI-assisted websites for students, small businesses, and programs." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-<main class="wrap">
-<header>
-  <img class="headshot" src="keaton-headshot.png" alt="Keaton Spellacy headshot">
-  <div>
-    <h1>Keaton Spellacy</h1>
-    <div class="tagline">Aviation | UAS | Technology | Leadership</div>
-    <p class="summary">
-      Aviation-focused student building real-world skills across flight training, unmanned aircraft systems, and applied technology.
-      I'm a Private Pilot and FAA Part 107 Remote Pilot, and I founded STARS (Service-oriented Technology, Aviation, and Robotics for Scholars)
-      to deliver hands-on aviation and STEM learning in the community.
-    </p>
-    <div class="kpi">
-      <span class="pill">Private Pilot (PPL)</span>
-      <span class="pill">FAA Part 107</span>
-      <span class="pill">STARS Founder</span>
-      <span class="pill">GA Governor's Workforce Summit Speaker</span>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="mark">KS</span><span>Keaton Spellacy</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="web-design.html">Web Design</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="stars.html">STARS</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
     </div>
-    <div class="btnrow">
-      <a class="btn" href="https://www.linkedin.com/in/keaton-spellacy" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-      <a class="btn" href="mailto:kcspellacy@gmail.com">kcspellacy@gmail.com</a>
-    </div>
-  </div>
+  </nav>
 </header>
-
-<section>
-<h2>About</h2>
-<p>
-I'm interested in aviation operations, safety culture, and how emerging technology supports better outcomes in the air and on the ground.
-My experience includes manned flight training, UAS operations, competitive autonomous systems, and cybersecurity fundamentals.
-I'm especially motivated by environments where precision matters, teams execute with discipline, and learning is tied to real responsibility.
-</p>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="eyebrow">Aviation • UAS • STEM • AI Websites</p>
+      <h1>Building disciplined aviation skills and practical technology projects.</h1>
+      <p>I'm a Private Pilot, FAA Part 107 Remote Pilot, and founder of STARS. I also build clean, affordable AI-assisted websites for students, programs, and local organizations.</p>
+      <div class="btnrow">
+        <a class="btn primary" href="web-design.html">View Website Services</a>
+        <a class="btn secondary" href="portfolio.html">See Demo Work</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="profile">
+        <div class="headshot-wrap" aria-label="Keaton Spellacy profile placeholder">
+          <span class="initials">KS</span>
+        </div>
+        <h2>Keaton Spellacy</h2>
+        <p>Aviation-focused student combining flight training, unmanned systems, cybersecurity, leadership, and community STEM outreach.</p>
+        <div class="badges">
+          <span class="badge">Private Pilot</span>
+          <span class="badge">FAA Part 107</span>
+          <span class="badge">STARS Founder</span>
+          <span class="badge">AI Website Builder</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+<main id="main">
+  <section class="section">
+    <div class="stat-row">
+      <div class="stat"><strong>PPL</strong><span>Private Pilot Certificate</span></div>
+      <div class="stat"><strong>107</strong><span>FAA Remote Pilot</span></div>
+      <div class="stat"><strong>STARS</strong><span>Founder-led STEM outreach</span></div>
+      <div class="stat"><strong>AI</strong><span>Website builds and demos</span></div>
+    </div>
+  </section>
 
-<section>
-<h2>Focus Areas</h2>
-<div class="grid3">
-  <div class="card">
-    <strong>Aviation &amp; Flight</strong><br>
-    Training-focused discipline and safety-first decision-making in both manned and unmanned environments.
-    <ul>
-      <li>Private Pilot (PPL)</li>
-      <li>Risk management mindset</li>
-      <li>Standardization and professionalism</li>
-    </ul>
-  </div>
-  <div class="card">
-    <strong>UAS, Autonomy &amp; Cyber</strong><br>
-    UAS operations and technical fundamentals applied through projects, competitions, and coursework.
-    <ul>
-      <li>FAA Part 107 operations and compliance</li>
-      <li>Autonomous/mission-based flight concepts</li>
-      <li>Cybersecurity fundamentals and team-based problem solving</li>
-    </ul>
-  </div>
-  <div class="card">
-    <strong>Leadership &amp; STEM Impact</strong><br>
-    Building teams and programs that execute well, communicate clearly, and deliver value to others.
-    <ul>
-      <li>Founder-led outreach (STARS)</li>
-      <li>Event execution and logistics</li>
-      <li>Instruction, mentoring, and public speaking</li>
-    </ul>
-  </div>
-</div>
-</section>
+  <section class="section split">
+    <div class="panel">
+      <p class="eyebrow" style="color:#1d4ed8">About</p>
+      <h2 style="margin-top:0">Aviation mindset. Technology execution. Community impact.</h2>
+      <p class="lead">I’m interested in aviation operations, safety culture, and how emerging technology supports better outcomes in the air and on the ground.</p>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>Aviation & Flight</h3><p>Training-focused discipline and safety-first decision-making in manned and unmanned environments.</p></div>
+      <div class="card"><h3>UAS & Cyber</h3><p>Hands-on work with drone systems, autonomy concepts, cybersecurity fundamentals, and technical problem solving.</p></div>
+      <div class="card"><h3>STEM Outreach</h3><p>Founder of STARS, a student-led program making aviation, robotics, and technology approachable.</p></div>
+      <div class="card"><h3>AI Websites</h3><p>Building clean websites for students, local businesses, aviation programs, and organizations.</p></div>
+    </div>
+  </section>
 
-<section>
-<h2>Highlights</h2>
-<div class="grid2">
-  <div class="card">
-    <h3>Top Credentials</h3>
-    <ul>
-      <li>FAA Part 141 Certified Private Pilot</li>
-      <li>FAA Part 107 Remote Pilot Certificate</li>
-      <li>US Air Force JROTC Flight Academy Scholarship Recipient (Purdue University)</li>
-    </ul>
-    <div class="hr"></div>
-    <p class="small">
-      I focus on preparation, safety, and repeatable execution - not just collecting credentials.
-    </p>
-  </div>
-  <div class="card">
-    <h3>Selective Recognition</h3>
-    <ul>
-      <li>CCSD &amp; GA CTAE Talent Spotlight Speaker - Georgia Governor's Workforce Summit</li>
-      <li>CyberPatriot XV National Finals - Placed 8th</li>
-      <li>National JROTC All-Service Aerial Drone Championship - Placed 2nd</li>
-    </ul>
-  </div>
-</div>
-</section>
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow" style="color:#1d4ed8">Website Services</p>
+        <h2>Affordable starter websites that look professional.</h2>
+      </div>
+      <p>Simple, mobile-friendly websites for students, small businesses, aviation/STEM programs, and local organizations.</p>
+    </div>
+    <div class="grid3">
+      <div class="card lift"><h3>Starter Website</h3><p class="price">$300+</p><p>One-page or simple multi-section website for a clean online presence.</p></div>
+      <div class="card lift"><h3>Portfolio Site</h3><p class="price">$399+</p><p>Great for student pilots, scholarship applicants, programs, and personal brands.</p></div>
+      <div class="card lift"><h3>Updates & Support</h3><p class="price">$25+/mo</p><p>Small updates, content edits, basic checks, and ongoing improvement.</p></div>
+    </div>
+    <div class="btnrow"><a class="btn dark" href="web-design.html">Learn More</a><a class="btn light" href="contact.html">Request a Site</a></div>
+  </section>
 
-<section>
-<h2>STARS - Community STEM Outreach</h2>
-<div class="grid2">
-  <div class="card">
-    <h3>What STARS is</h3>
-    <p class="small">
-      STARS (Service-oriented Technology, Aviation, and Robotics for Scholars) is a student-led outreach program I founded to make aviation and
-      technology approachable through hands-on learning. Sessions are built to be safe, engaging, and repeatable, with clear learning goals and
-      strong station flow.
-    </p>
-    <div class="hr"></div>
-    <h3>What a session looks like</h3>
-    <ul>
-      <li>Quick safety brief and expectations</li>
-      <li>Hands-on stations (drones, flight, robotics, cybersecurity)</li>
-      <li>Short debrief connecting concepts to real careers</li>
-      <li>Take-home pathways to keep learning</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3>Modules I've built and led</h3>
-    <ul>
-      <li>Drone fundamentals and safe operating practices</li>
-      <li>Aerodynamics basics: lift, drag, stability, control</li>
-      <li>Flight simulation and aviation workflow</li>
-      <li>Robotics fundamentals and iterative improvement</li>
-      <li>Cybersecurity fundamentals (age-appropriate)</li>
-    </ul>
-    <div class="hr"></div>
-    <p class="small">
-      Interested in hosting STARS? Email me with your organization, preferred dates, student age range, and module interests.
-    </p>
-  </div>
-</div>
-</section>
-
-<section>
-<h2>Projects &amp; Applied Work</h2>
-<div class="grid2">
-  <div class="card">
-    <h3>UAS Operations + Competitive Systems</h3>
-    <p class="small">
-      Competitive drone work taught me how to create repeatable processes: preflight planning, controlled testing, post-flight review, and clean documentation.
-      I'm comfortable working within constraints and improving performance through disciplined iteration.
-    </p>
-    <ul>
-      <li>Mission planning and compliance mindset</li>
-      <li>Autonomy concepts and repeatability</li>
-      <li>Systems thinking: hardware + software + human factors</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3>Cybersecurity Fundamentals</h3>
-    <p class="small">
-      Cybersecurity rewards the same traits aviation demands: discipline, accountability, and clear thinking under pressure.
-      I've applied foundational concepts in competition and coursework environments focused on practical problem solving.
-    </p>
-    <ul>
-      <li>Security policy and basic forensics concepts</li>
-      <li>Network challenge environments and risk identification</li>
-      <li>Clear communication and documentation</li>
-    </ul>
-  </div>
-</div>
-
-<div class="card" style="margin-top:14px;">
-  <h3>Technical Skills Snapshot</h3>
-  <ul>
-    <li>Python, Linux, and Windows environments</li>
-    <li>Object-oriented programming (Java)</li>
-    <li>Security fundamentals: policy, forensics concepts, and secure practices</li>
-    <li>Independent learning: generative AI and machine learning basics</li>
-  </ul>
-</div>
-</section>
-
-<section>
-<h2>Education</h2>
-<div class="grid2">
-  <div class="card">
-    <h3>Etowah High School</h3>
-    <p class="small">Aug 2024 - Present</p>
-    <ul>
-      <li>AP coursework in progress: Physics (Algebra-based), Computer Science A, Calculus AB, English Literature &amp; Composition</li>
-      <li>Completed: Chemistry, Pre-Calculus, Computer Science Principles, Language Arts</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3>Dual Enrollment</h3>
-    <ul>
-      <li>Chattahoochee Tech: Intro to Law &amp; Ethics; Information Security Fundamentals (and related coursework)</li>
-      <li>Purdue University: JROTC Ground School (Summer 2025)</li>
-      <li>Georgia Military College: Intro to American Government</li>
-    </ul>
-  </div>
-</div>
-</section>
-
-<section>
-<h2>Affiliations</h2>
-<div class="grid3">
-  <div class="card"><strong>AOPA</strong><br>Aircraft Owners and Pilots Association</div>
-  <div class="card"><strong>EAA</strong><br>Experimental Aircraft Association</div>
-  <div class="card"><strong>Project Aviator</strong><br>Mentor/Mentee Program</div>
-</div>
-</section>
-
-<section>
-<h2>Selected Achievements</h2>
-<ul>
-  <li>CCSD &amp; GA CTAE Talent Spotlight Speaker - Georgia Governor's Workforce Summit</li>
-  <li>FAA Part 141 Certified Private Pilot (PPL)</li>
-  <li>FAA Part 107 Remote Pilot Certificate</li>
-  <li>CyberPatriot XV National Finals - Placed 8th</li>
-  <li>National JROTC All-Service Aerial Drone Championship - Placed 2nd</li>
-  <li>Selected &amp; Attended UNG National Intelligence Summer Academy (NISA)</li>
-  <li>VEX Robotics Team earned an invitation to Nationals</li>
-</ul>
-<p class="small">
-I keep this page curated for quick scanning. For a full resume, references, or a detailed portfolio, feel free to reach out.
-</p>
-</section>
-
-<section>
-<h2>What I'm Working On</h2>
-<div class="grid2">
-  <div class="card">
-    <h3>Near-term</h3>
-    <ul>
-      <li>Continuing disciplined aviation training and study</li>
-      <li>Expanding STARS delivery with consistent quality and strong safety practices</li>
-      <li>Deepening technical skill in UAS systems and cybersecurity fundamentals</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3>Long-term</h3>
-    <ul>
-      <li>Professional flight with a focus on safe, standardized operations</li>
-      <li>Aviation policy and general aviation advocacy</li>
-      <li>Technology-enabled systems that improve safety and access</li>
-    </ul>
-  </div>
-</div>
-</section>
-
-<section>
-<h2>Contact</h2>
-<div class="grid2">
-  <div class="card">
-    <h3>Best ways to reach me</h3>
-    <ul>
-      <li>Email: <a href="mailto:kcspellacy@gmail.com">kcspellacy@gmail.com</a></li>
-      <li>Phone: <a href="tel:+14706921851">(470) 692-1851</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/keaton-spellacy" target="_blank" rel="noreferrer noopener">keaton-spellacy</a></li>
-    </ul>
-    <p class="small">Open to internships, mentorship conversations, speaking opportunities, and STARS partnerships.</p>
-  </div>
-  <div class="card">
-    <h3>Quick note</h3>
-    <p class="small">
-      If you're reaching out about STARS, include the school/organization name, preferred dates, student age range, and the topics you're interested in
-      (aviation, drones, robotics, cybersecurity). I'll respond with a simple plan and what we need on-site.
-    </p>
-  </div>
-</div>
-</section>
-
-<footer>© <span id="y"></span> Keaton Spellacy</footer>
+  <section class="section">
+    <div class="callout">
+      <div>
+        <h2 style="margin:0">Need a simple site for a club, program, or small business?</h2>
+        <p>I can help create a clean demo or starter website and connect it to a domain.</p>
+      </div>
+      <div class="btnrow"><a class="btn primary" href="contact.html">Start Here</a></div>
+    </div>
+  </section>
 </main>
-<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+<footer class="footer"><div class="footer-inner"><span>© <span id="y"></span> Keaton Spellacy</span><span><a href="mailto:kcspellacy@gmail.com">kcspellacy@gmail.com</a></span></div></footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
